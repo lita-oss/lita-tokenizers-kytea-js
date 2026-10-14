@@ -1,0 +1,27 @@
+[package]
+name = "lita-tokenizers-kytea-js"
+version = "0.1.0"
+edition = "2024"
+authors = ["Masato Nakata <masaton@naughie.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/naughie/lita-tokenizers-kytea-js"
+homepage = "https://github.com/naughie/lita-tokenizers-kytea-js"
+
+[lib]
+name = "lita_tokenizers_kytea_js"
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+strip = "symbols"
+codegen-units = 1
+
+[dependencies]
+napi = { version = "3.12.4", default-features = false, features = ["napi4"] }
+napi-derive = "3.6.5"
+
+kytea-sys = "0.2.6"
+tokenizers-core = { package = "lita-tokenizers-core", version = "0.1.0" }
+
+[build-dependencies]
+napi-build = "2.4.2"
