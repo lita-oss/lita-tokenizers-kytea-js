@@ -53,7 +53,7 @@ jobs:
             build: yarn build --target x86_64-apple-darwin
           - host: ubuntu-latest
             target: x86_64-unknown-linux-gnu
-            build: yarn build --target x86_64-unknown-linux-gnu --use-napi-cross
+            build: yarn build --target x86_64-unknown-linux-gnu -x
           - host: ubuntu-latest
             target: x86_64-unknown-linux-musl
             build: yarn build --target x86_64-unknown-linux-musl -x
@@ -92,12 +92,10 @@ jobs:
             target/
           key: ${{ matrix.settings.target }}-cargo-${{ matrix.settings.host }}
       - uses: mlugg/setup-zig@v2
-        if: ${{ contains(matrix.settings.target, 'musl') || matrix.settings.target == 'aarch64-unknown-linux-gnu' }}
         with:
           version: 0.15.2
       - name: Install cargo-zigbuild
         uses: taiki-e/install-action@v2
-        if: ${{ contains(matrix.settings.target, 'musl') || matrix.settings.target == 'aarch64-unknown-linux-gnu' }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
