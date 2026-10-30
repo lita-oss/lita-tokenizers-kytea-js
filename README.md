@@ -1,5 +1,7 @@
 # lita-tokenizers-kytea-js
 
+[![npm](https://img.shields.io/npm/v/lita-tokenizers-kytea-js.svg)](https://www.npmjs.com/package/lita-tokenizers-kytea-js)
+
 KyTea bindings for Node.js.
 
 ## Usage

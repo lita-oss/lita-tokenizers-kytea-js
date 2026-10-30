@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2024"
 authors = ["Masato Nakata <masaton@naughie.com>"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/naughie/lita-tokenizers-kytea-js"
-homepage = "https://github.com/naughie/lita-tokenizers-kytea-js"
+repository = "https://github.com/lita-oss/lita-tokenizers-kytea-js"
+homepage = "https://github.com/lita-oss/lita-tokenizers-kytea-js"
 
 [lib]
 name = "lita_tokenizers_kytea_js"

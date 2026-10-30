@@ -6,7 +6,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/naughie/lita-tokenizers-kytea-js.git"
+    "url": "git+ssh://git@github.com/lita-oss/lita-tokenizers-kytea-js.git"
   },
   "license": "(MIT OR Apache-2.0)",
   "keywords": [
@@ -95,5 +95,13 @@
       "@oxc-node/core/register"
     ]
   },
-  "packageManager": "yarn@4.18.0"
+  "packageManager": "yarn@4.18.0",
+  "optionalDependencies": {
+    "lita-tokenizers-kytea-js-darwin-arm64": "1.0.0",
+    "lita-tokenizers-kytea-js-linux-arm64-gnu": "1.0.0",
+    "lita-tokenizers-kytea-js-linux-arm64-musl": "1.0.0",
+    "lita-tokenizers-kytea-js-darwin-x64": "1.0.0",
+    "lita-tokenizers-kytea-js-linux-x64-gnu": "1.0.0",
+    "lita-tokenizers-kytea-js-linux-x64-musl": "1.0.0"
+  }
 }
